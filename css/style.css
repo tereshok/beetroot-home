@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC:700|Roboto:300,400,500');
+body{
+	font:300 17px/1.47 Roboto, sans-serif;
+	color: rgba(60, 57, 53, 0.8);
+}
+h1, h2, h3, h4, h5, h6{
+	color: #3D3935;
+	font-weight: 400;
+	margin-top: 0;
+}
+h1, h2{
+	font-weight: 300;
+}
+h1{
+	font-size: 60px;
+}
+h2{
+	font-size: 45px;
+}
+h3{
+	font-size: 22px;
+}
+h4{
+	font-size: 19px;
+}
+h5, h6{
+	font-size: 17px;
+}
+
+a{
+	text-decoration: none;
+	color: #BC204B;
+}
+a:hover, a:active{
+	color: #f1b828;
+}
+p{
+	margin: 0 0 15px;
+}
+/* Layout */
+.ba-container{
+	padding-left: 30px;
+	padding-right: 30px;
+	max-width: 1230px;
+}
+.ba-container--small{
+	max-width: 830px;
+}
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	display: inline-block;
+
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover{
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+
+}
+textarea {
+
+}
+
+.ba-header-bar{
+	height: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.ba-hide{
+	display: none;
+}
+.ba-intro{
+	color: rgba(255,255,255,0.8);
+	display: flex;
+	align-items: center;
+	min-height: calc(100vh - 80px);
+
+	position: relative;
+	overflow: hidden;
+}
+.ba-intro:before{
+	background: linear-gradient(to top, rgba(147, 45, 95, 0.8), rgba(172, 7, 52, 0.8));
+
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1;
+}
+
+.ba-intro__body{
+	padding: 100px 0;
+	position: relative;
+	z-index: 2;
+}
+
+
+.ba-page-title{
+	text-align: center;
+	margin:0 0 15px;
+}
+.ba-page-subtitle{
+	font-weight: 300;
+	text-align: center;
+	margin:0 0 45px;
+}
+
+.ba-intro h1,
+.ba-intro h2,
+.ba-intro h3,
+.ba-intro h4,
+.ba-intro h5,
+.ba-intro h6{
+	color: #FFF;
+}
+.ba-project-link{
+	color: #fff;
+	display: flex;
+}
+
+.ba-project-link svg {
+	flex-shrink: 0;
+}
+.ba-project-link:hover{
+color: rgba(255, 255, 255, 0.5);
+}
+
+.ba-project-link__body {
+	padding-left: 16px;
+}
+.ba-project-link__title {
+	margin: 0;
+	font-size: 17px;
+}
+.ba-read-more{
+color:#f1b828;
+	transition: color .2s, opacity .2s;
+}
+
+.ba-read-more:hover {
+	color:#fff;
+}
+
+.ba-read-more--wp {
+	color:#f1b828;
+}
+
+.ba-read-more--tp {
+	color:#f1b828;
+}
+
+.ba-read-more--ep {
+	color:#bc204b;
+}
+
+.ba-read-more--rp {
+	color:#489fdf;
+}
+
+.ba-read-more svg {
+	margin-left: 10px;
+}
+
+.ba-scroll {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    position: relative;
+    font-family: 'Amatic SC', sans-serif;
+    text-transform: uppercase;
+    color: rgba(227, 227, 221, 0.8);
+    flex-shrink: 0;
+}
+
+.ba-scroll a {
+    color: inherit;
+}
+
+.ba-scroll svg {
+    position: absolute;
+    transform: translate(20px,10px);
+}
+
+.ba-scroll:hover {
+	color: #489fdf;
+}
+
+.ba-section-low {
+	background-color: #f4f4f1;
+    padding: 100px 0 95px;
+}
+
+.ba-section-low__container {
+	padding-left: 115px;
+	padding-right: 115px;
+	
+}
+
+.ba-section-low__header {
+	display: flex;
+    justify-content: space-between;
+	align-items: center;
+	margin-bottom: 45px;
+	max-width: 1250px;
+}
+
+.ba-hover__rad:hover {
+	background: #BC204B;
+	border-radius: 30px;
+}
+
+.ba-hover__ov:hover {
+	background: #f1b828;
+	border-radius: 23px;
+}
+
+.ba-hover__ov {
+	margin-left: 15px;
+}
+
+.ba-hover__rad1 {
+	margin-left: 10px;
+}
+
+.ba-log--padd {
+	padding-left: 15px;
+}
+
+.ba-log-one {
+	display: flex;
+    align-items: center;
+}
+
+.ba-log-three {
+	display: flex;
+}
+
+span{
+	font-family: Roboto;
+	color:  rgba(60, 57, 53, 0.5);
+	font-size: 10px;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+.ba-middle-title {
+	font-family: Roboto;
+color: #3D3935;
+font-size: 19px;
+font-weight: 400;
+}
+
+.ba-middle-foot {
+	font-family: Roboto;
+color:  rgba(60, 57, 53, 0.9);
+font-size: 17px;
+font-weight: 300;
+}
+
